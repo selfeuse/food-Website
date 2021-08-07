@@ -9,8 +9,11 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: #5d4954;
+  /*  background-color: #5d4954;*/
     font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 0;
+    width: 100vw;
 }
 
 .logo {
@@ -34,7 +37,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .burger {
@@ -49,6 +52,71 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+
+.home-section {
+    text-align: center;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/home.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-section .text-area {
+    margin-bottom: 50px;
+    color: rgb(226, 226, 226);
+    letter-spacing: 7px;
+    font-size: 3em;
+    padding-top: 30vh;
+    font-weight: lighter;
+}
+
+.home-section .restaurant-name {
+    font-weight: lighter;
+}
+
+.links-area {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 125px;
+}
+
+.link {
+    border: 1px solid rgb(226, 226, 226);
+    width: 250px;
+    padding: 25px 25px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(226, 226, 226);
+    line-height: 22px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.arrows-area {
+    animation: up-and-down 1.5s alternate-reverse infinite ease-in-out
+}
+
+.arrow {
+    border: solid rgb(226, 226, 226);
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 8px;
+    margin: -15px;
+    width: 50px;
+    height: 50px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
 
 @media screen and (max-width: 768px) {
     body {
@@ -94,6 +162,13 @@ nav {
     }
 }
 
+@keyframes up-and-down {
+    100% {
+      transform: translateY(-20px);
+    }
+}
+
+
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px,6px);
 }
@@ -104,5 +179,4 @@ nav {
 
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px,-6px);
-    
 }
