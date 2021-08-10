@@ -180,6 +180,24 @@ nav {
     background-image: url('./assets/dessert.jpg');
 }
 
+.drinks-menu, .starter-menu, .lunch-menu, .dinner-menu, .dessert-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.drinks-img, .starter-img, .lunch-img, .dinner-img, .dessert-img {
+    grid-column: 1/2;
+    grid-row: 1;
+}
+
+.drinks-details, .starter-details, .lunch-details, .dinner-details, .dessert-details {
+    grid-column: 2/2;
+    grid-row: 1;
+}
+
+.menu-details img {
+    max-width:100%;
+}
 
 @media screen and (max-width: 768px) {
     body {
