@@ -28,6 +28,12 @@ const menuContainer = () => {
 
     menuItems.forEach(function(menuItem) {
         menuItem.addEventListener('click', () => {
+            const categoryName = menuItem.childNodes[0].href.split('#')[1];
+            const category = categoryName + '-menu';
+            const allCategory = document.querySelector('menu-details');
+
+            console.log(allCategory)
+            console.log(menuItem.childNodes[0].href.split('#')[1])
             menuItems.forEach(function(menuItem) {
               menuItem.classList.remove('menu-items-active');
             })
