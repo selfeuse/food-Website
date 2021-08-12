@@ -23,4 +23,18 @@ const navSlide = () => {
 
 }
 
+const menuContainer = () => {
+    const menuItems = document.querySelectorAll('.menu-items li');
+
+    menuItems.forEach(function(menuItem) {
+        menuItem.addEventListener('click', () => {
+            menuItems.forEach(function(menuItem) {
+              menuItem.classList.remove('menu-items-active');
+            })
+            menuItem.classList.add('menu-items-active');
+        })
+    })
+}
+
 navSlide();
+menuContainer();
