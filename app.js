@@ -27,16 +27,22 @@ const menuContainer = () => {
     const menuItems = document.querySelectorAll('.menu-items li');
 
     menuItems.forEach(function(menuItem) {
-        menuItem.addEventListener('click', () => {
+        menuItem.addEventListener('click', () => {            
+            menuItems.forEach(function(menuItem) {
+                const categoryName = menuItem.childNodes[0].href.split('#')[1];
+                const category = categoryName + '-menu';
+                const elem = document.getElementById(category);
+
+                elem.style.display = 'none';
+
+                menuItem.classList.remove('menu-items-active');
+            })
+            
             const categoryName = menuItem.childNodes[0].href.split('#')[1];
             const category = categoryName + '-menu';
-            const allCategory = document.querySelector('menu-details');
+            const elem = document.getElementById(category);
 
-            console.log(allCategory)
-            console.log(menuItem.childNodes[0].href.split('#')[1])
-            menuItems.forEach(function(menuItem) {
-              menuItem.classList.remove('menu-items-active');
-            })
+            elem.style.display = 'grid';
             menuItem.classList.add('menu-items-active');
         })
     })
