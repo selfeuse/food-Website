@@ -250,6 +250,20 @@ nav {
     color: white;
 }
 
+.text-testimonial, .contact-testimonial {
+    font-size: 25px;
+}
+
+.contact-testimonial {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.splide {
+    padding: 0 100px;
+    margin: auto;
+}
+
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden;
