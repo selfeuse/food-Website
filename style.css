@@ -120,8 +120,52 @@ nav {
 .description-section {
     padding: 100px 20px;
     text-align: center;
-    height: 50vh;
+    height: fit-content;
     background-color: white;
+}
+
+.description-area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+}
+
+.description-img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.description-img img {
+    
+    height: 100%;
+    width: 400px;
+    object-fit: cover;
+}
+
+.description-text {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.values-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+}
+
+.authentic-item {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.fresh-item {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.friendly-item {
+    grid-column: 3;
+    grid-row: 1;
 }
 
 .menu-section {
