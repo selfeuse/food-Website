@@ -9,7 +9,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     position: absolute;
     top: 0;
     width: 99vw;
@@ -55,7 +55,7 @@ nav {
 .home-section {
     text-align: center;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/home.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/home.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -99,7 +99,7 @@ nav {
 }
 
 .arrows-area {
-    animation: up-and-down 1.5s alternate-reverse infinite ease-in-out
+    animation: up-and-down 1.5s alternate-reverse infinite ease-in-out;
 }
 
 .arrow {
@@ -115,6 +115,13 @@ nav {
 .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.description-section {
+    padding: 100px 20px;
+    text-align: center;
+    height: 50vh;
+    background-color: white;
 }
 
 .menu-section {
@@ -150,16 +157,17 @@ nav {
 }
 
 .menu-items li {
-    padding: 80px 80px;
+    padding: 60px 60px;
     box-shadow: 1px 1px 10px #333;
     background-size: cover;
     background-position: center;
     list-style-type: none;
     cursor: pointer;
-    margin: 0 5px;
+    margin: 5px 5px;
 }
 
-.menu-items li:hover a, .menu-items-active {
+.menu-items li:hover a,
+.menu-items-active {
     text-decoration: underline;
     text-underline-offset: 5px;
     font-weight: bold;
@@ -186,33 +194,37 @@ nav {
 }
 
 .drinks-item {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/drinks.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/drinks.jpg");
     grid-column: 1;
     grid-row: 1;
 }
 
 .starter-item {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/starter.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/starter.jpg");
     grid-column: 2;
     grid-row: 1;
 }
 .lunch-item {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/lunch.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/lunch.jpg");
     grid-column: 3;
     grid-row: 1;
 }
 .dinner-item {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/dinner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/dinner.jpg");
     grid-column: 4;
     grid-row: 1;
 }
 .dessert-item {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/dessert.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/dessert.jpg");
     grid-column: 5;
     grid-row: 1;
 }
 
-#drinks-menu, #starter-menu, #lunch-menu, #dinner-menu, #dessert-menu {
+#drinks-menu,
+#starter-menu,
+#lunch-menu,
+#dinner-menu,
+#dessert-menu {
     display: none;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
@@ -224,12 +236,20 @@ nav {
     display: grid;
 }
 
-.drinks-img, .starter-img, .lunch-img, .dinner-img, .dessert-img {
+.drinks-img,
+.starter-img,
+.lunch-img,
+.dinner-img,
+.dessert-img {
     grid-column: 1;
-    grid-row: 1;  
+    grid-row: 1;
 }
 
-.drinks-details, .starter-details, .lunch-details, .dinner-details, .dessert-details {
+.drinks-details,
+.starter-details,
+.lunch-details,
+.dinner-details,
+.dessert-details {
     grid-column: 2/3;
     grid-row: 1;
     background-color: #ffffff;
@@ -237,20 +257,22 @@ nav {
 }
 
 .menu-details img {
-    max-width:100%;
+    max-width: 100%;
 }
 
 .testimonial-section {
     padding: 100px 20px;
     text-align: center;
     height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('./assets/testimonial.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/testimonial.jpg");
     background-size: cover;
     background-position: center;
     color: white;
+    height: fit-content;
 }
 
-.text-testimonial, .contact-testimonial {
+.text-testimonial,
+.contact-testimonial {
     font-size: 25px;
 }
 
@@ -261,7 +283,80 @@ nav {
 
 .splide {
     padding: 0 100px;
-    margin: auto;
+    margin: auto;    
+}
+
+.reservation-section {
+    padding: 100px 20px;
+    text-align: center;
+    height: 50vh;
+    background-color: rgb(243, 235, 237);
+}
+
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+    height: 50vh;
+    background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-section {
+        padding: 100px 80px;
+    }
+
+    .menu-items {
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+    }
+
+    .drinks-item {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .starter-item {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .lunch-item {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .dinner-item {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .dessert-item {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #drinks-menu,
+    #starter-menu,
+    #lunch-menu,
+    #dinner-menu,
+    #dessert-menu {
+        grid-template-columns: repeat(1, 2fr);
+    }
+
+    .drinks-img,
+    .starter-img,
+    .lunch-img,
+    .dinner-img,
+    .dessert-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .drinks-details,
+    .starter-details,
+    .lunch-details,
+    .dinner-details,
+    .dessert-details {
+        grid-column: 1;
+        grid-row: 2;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -314,11 +409,11 @@ nav {
     }
 }
 
-.nav-active{
+.nav-active {
     transform: translateX(0);
 }
 
-@keyframes navLinkFade { 
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
@@ -332,13 +427,12 @@ nav {
 
 @keyframes up-and-down {
     100% {
-      transform: translateY(-20px);
+        transform: translateY(-20px);
     }
 }
 
-
 .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px,6px);
+    transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .toggle .line2 {
@@ -346,5 +440,5 @@ nav {
 }
 
 .toggle .line3 {
-    transform: rotate(45deg) translate(-5px,-6px);
+    transform: rotate(45deg) translate(-5px, -6px);
 }
