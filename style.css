@@ -118,7 +118,7 @@ nav {
 }
 
 .description-section {
-    padding: 100px 20px;
+    padding: 100px 200px;
     text-align: center;
     height: fit-content;
     background-color: white;
@@ -136,7 +136,6 @@ nav {
 }
 
 .description-img img {
-    
     height: 100%;
     width: 400px;
     object-fit: cover;
@@ -145,12 +144,22 @@ nav {
 .description-text {
     grid-column: 2;
     grid-row: 1;
+    font-size: 20px;
+}
+
+.description-item {   
+    height: 50%;
+    display: flex;
+    align-items:flex-end;
 }
 
 .values-item {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;
+    justify-content: space-around;   
+    height: 50%;
+    display: flex;
+    align-items: center;
 }
 
 .authentic-item {
@@ -398,6 +407,20 @@ nav {
     .lunch-details,
     .dinner-details,
     .dessert-details {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .description-area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .description-img {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .description-text {
         grid-column: 1;
         grid-row: 2;
     }
