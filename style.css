@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+/*
+    Nav area
+*/
+
 nav {
     display: flex;
     justify-content: space-around;
@@ -51,6 +55,10 @@ nav {
     margin: 5px;
     transition: all 0.3s ease;
 }
+
+/*
+    Home area
+*/
 
 .home-section {
     text-align: center;
@@ -117,6 +125,10 @@ nav {
     -webkit-transform: rotate(45deg);
 }
 
+/*
+    Description area
+*/
+
 .description-section {
     padding: 100px 200px;
     text-align: center;
@@ -141,25 +153,57 @@ nav {
     object-fit: cover;
 }
 
-.description-text {
+.dscription-right-section {
     grid-column: 2;
     grid-row: 1;
     font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
 }
 
-.description-item {   
-    height: 50%;
+.description-text {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     align-items:flex-end;
 }
 
-.values-item {
+.value-title-items {
+    grid-column: 1;
+    grid-row: 2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-content: space-around;   
-    height: 50%;
+}
+
+.authentic-title {
+    grid-column: 1;
+    grid-row: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.fresh-title {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friendly-title {
+    grid-column: 3;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.values-item {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .authentic-item {
@@ -176,6 +220,10 @@ nav {
     grid-column: 3;
     grid-row: 1;
 }
+
+/*
+    Menu area
+*/
 
 .menu-section {
     text-align: center;
@@ -313,6 +361,10 @@ nav {
     max-width: 100%;
 }
 
+/*
+    Testimonial area
+*/
+
 .testimonial-section {
     padding: 100px 20px;
     text-align: center;
@@ -339,12 +391,20 @@ nav {
     margin: auto;    
 }
 
+/*
+    Reservation area
+*/
+
 .reservation-section {
     padding: 100px 20px;
     text-align: center;
     height: 50vh;
     background-color: rgb(243, 235, 237);
 }
+
+/*
+    Contact area
+*/
 
 .contact-section {
     padding: 100px 20px;
