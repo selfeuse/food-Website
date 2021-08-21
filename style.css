@@ -165,7 +165,7 @@ nav {
     grid-column: 1;
     grid-row: 1;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 .value-title-items {
@@ -388,7 +388,7 @@ nav {
 
 .splide {
     padding: 0 100px;
-    margin: auto;    
+    margin: auto;
 }
 
 /*
@@ -398,8 +398,89 @@ nav {
 .reservation-section {
     padding: 100px 20px;
     text-align: center;
-    height: 50vh;
+    height: auto;
     background-color: rgb(243, 235, 237);
+}
+
+.reservation-container {
+    margin: 0 200px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.reservation-time {
+    background-color: white;
+    padding: 50px;
+    outline: 3px dashed rgb(243, 235, 237);
+    outline-offset: -30px;
+    text-align: center;
+    padding-top: 125px;
+}
+
+.reservation-time hr {
+    margin: 20px 0;
+}
+
+.reservation-time h3 {
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.reservation-time h2 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.reservation-time p {
+    font-size: 20px;
+}
+
+.reservation-form {
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.reservation-form form {
+    display: grid;
+    justify-content: space-between;
+}
+
+.reservation-form h2 {
+    margin: 20px 0;
+}
+
+.form-field input,
+.form-field select {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 15px 60px;
+    outline: none;
+    border: 1px #e4d0d5 solid;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.form-field p {
+    float: left;
+    margin: 15px 0;
+}
+
+.reservation-btn {
+    width: 50%;
+    margin: 20px auto;
+    background-color: rgb(243, 235, 237);
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    padding: 12px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
 /*
@@ -428,7 +509,7 @@ nav {
     border: 0;
     padding: 20px 40px;
     outline: none;
-    border: 1px #E4D0D5 solid;
+    border: 1px #e4d0d5 solid;
     border-radius: 10px;
     transition: 0.5s;
 }
@@ -445,7 +526,7 @@ textarea.contact-form-text {
 .contact-form-btn {
     float: right;
     border: 0;
-    background:rgb(243, 235, 237);
+    background: rgb(243, 235, 237);
     padding: 12px 50px;
     border-radius: 20px;
     cursor: pointer;
@@ -550,7 +631,7 @@ textarea.contact-form-text {
     .description-area {
         grid-template-columns: repeat(1, 1fr);
     }
-    
+
     .description-img {
         grid-column: 1;
         grid-row: 1;
@@ -559,6 +640,10 @@ textarea.contact-form-text {
     .description-text {
         grid-column: 1;
         grid-row: 2;
+    }
+
+    .reservation-container {
+        margin: 0;
     }
 }
 
