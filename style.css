@@ -26,7 +26,7 @@ nav {
 }
 
 .nav-links {
-    display: flex;
+    display: none;
     width: 40%;
     justify-content: space-around;
 }
@@ -473,7 +473,7 @@ nav {
 .form-field input,
 .form-field select {
     display: block;
-    width: 100%;
+    width: 90%;
     box-sizing: border-box;
     margin: 10px 0;
     padding: 15px 60px;
@@ -687,7 +687,7 @@ textarea.contact-form-text {
         height: 92vh;
         top: 8vh;
         background-color: #5d4954;
-        display: flex;
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 50%;
@@ -717,12 +717,51 @@ textarea.contact-form-text {
         font-size: 15px;
     }
 
+
+    .description-section {
+        padding: 100px 20px;
+    }
+
     .menu-titles span {
         font-size: 50px;
     }
 
     .menu-titles h1 {
         font-size: 35px;
+    }
+    
+    .menu-items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .drinks-item {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .starter-item {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .lunch-item {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .dinner-item {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .dessert-item {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .menu-items li {
+        padding: 60px 0;
     }
 }
 
