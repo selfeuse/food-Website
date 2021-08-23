@@ -26,8 +26,8 @@ nav {
 }
 
 .nav-links {
-    display: none;
-    width: 40%;
+    display: flex;
+    width: 60%;
     justify-content: space-around;
 }
 
@@ -687,7 +687,7 @@ textarea.contact-form-text {
         height: 92vh;
         top: 8vh;
         background-color: #5d4954;
-        display: none;
+        display: flex;
         flex-direction: column;
         align-items: center;
         width: 50%;
